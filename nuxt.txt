@@ -1,0 +1,101 @@
+NUXT
+
+Nuxt.js is a frontend framework built upon Vue.js that offers great development features
+such as server side rendering, automatically generated routes, improved meta tags managing and SEO improvement.
+
+
+# Client Side Rendering (CSR) vs. Server Side Rendering (SSR)
+
+
+## BENEFITS OF CSR:
+
+- Dynamically changing page content without having to send a request to the server each time
+- The app feels more responsive and users do not see the flash between page navigations due to full-page refreshes
+- Fewer HTTP requests are made to the server, as the same assets do not have to be downloaded again for each page load
+
+## DOWNSIDE OF CSR:
+
+- Heavier initial page load due to loading of the framework, app code, and assets required for multiple pages
+
+
+## BENEFITS OF SSR:
+
+- The initial page of the website load is faster as there are fewer codes to render
+- Good for minimal and static sites
+- Search engines can crawl the site for better SEO
+- Ideal for Static Pages (same HTML codes to all users)
+
+## DOWNSIDE OF SSR:
+
+- The site interactions are less
+- Slow page rendering
+- Full UI reloads
+- Frequent server requests
+
+
+
+
+
+# INSTALLATION:
+
+Using create-nuxt-app
+npm init nuxt-app <project-name>
+
+
+create-nuxt-app v4.0.0
+✨  Generating Nuxt.js project in delete-me
+? Project name: delete-me
+? Programming language: JavaScript
+? Package manager: Npm
+? UI framework: None
+? Nuxt.js modules: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+? Linting tools: (Press <space> to select, <a> to toggle all, <i> to invert selection)
+? Testing framework: None
+? Rendering mode: (Use arrow keys)
+❯ Universal (SSR / SSG)
+  Single Page App
+
+
+  SSG: Static Site Generation
+  SSG - read more: https://nuxtjs.org/docs/concepts/static-site-generation/
+  Read more: https://stackoverflow.com/questions/70037921/how-ssg-works-in-nuxt
+
+
+
+
+
+
+  # THE SSR PROPERTY
+
+  Change default nuxt ssr value
+
+  Type: boolean
+  Default: true
+
+  true: Server-side rendering enabled
+  false: No server-side rendering (only client-side rendering)
+  You can set this option to false when you want only client side rendering
+
+  nuxt.config.js
+  export default {
+    ssr: false // Disable Server Side rendering
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
